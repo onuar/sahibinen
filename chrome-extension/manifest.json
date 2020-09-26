@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "SAHİBİNEN",
+  "description": "An extension to export data from Sahibinden.com to Google Sheets",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "http://*.google.com/",
+    "background"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "jquery-2.0.3.min.js",
+        "content.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-2.0.3.min.map"
+  ]
+}
