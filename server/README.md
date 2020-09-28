@@ -11,3 +11,9 @@ export GOOGLE_APPLICATION_CREDENTIALS=./credential dosya directory'si.json
 ``` 
 
 5- Kolonlar: Fiyat	Cephe	Kat/BinaKat	Oda	Net/Brüt	Bina yaş	Kimden	İlan	Tarih
+
+6- Docker'da çalıştırmak için:
+
+```docker build -t <your username>/sahibinen-server .```
+
+```docker run -p 3012:3012 -d <your username>/sahibinen-server``` 
