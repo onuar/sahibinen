@@ -4,7 +4,7 @@
 
 3- Drive içinde yaratılan spreadsheet dosyan için, credential dosyandaki email adresine yetki tanımla.
 
-4- GCLOUD_PROJECT ve GOOGLE_APPLICATION_CREDENTIALS'ı persist et:
+4- GCLOUD_PROJECT ve GOOGLE_APPLICATION_CREDENTIALS'ı (bunu, docker'da ayağa kaldıracaksan yapma, GoogleAuth'a keyFile set edip, image içine credential'i de alman lazım.) persist et:
 ```
 export GCLOUD_PROJECT={project ID of your google project}
 export GOOGLE_APPLICATION_CREDENTIALS=./credential dosya directory'si.json

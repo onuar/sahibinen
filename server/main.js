@@ -42,6 +42,7 @@ app.listen(port, () => {
 
 async function getAuthToken() {
     const auth = new google.auth.GoogleAuth({
+        keyFile: './sahibinen-credentials.json',
         scopes: SCOPES
     });
     let authToken = await auth.getClient();

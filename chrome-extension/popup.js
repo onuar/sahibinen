@@ -35,7 +35,7 @@ $(document).ready(function () {
 			type: "POST",
 			url: path,
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
-			timeout: 2000,
+			timeout: 10000,
 			dataType: "json",
 			success: function (data, status) {
 				alert(status);
