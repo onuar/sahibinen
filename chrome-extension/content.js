@@ -20,6 +20,8 @@ $(document).ready(function () {
 			let age = infos[6].innerText;
 			let from = infos[19].innerText;
 			let link = location.href;
+			let ownership = infos[18].innerText;
+
 			responseCallback({
 				neighborhood: neighborhood,
 				price: price,
@@ -29,7 +31,8 @@ $(document).ready(function () {
 				area: area,
 				age: age,
 				from: from,
-				link: link
+				link: link,
+				ownership: ownership
 			});
 		} else if (location.host === "www.hurriyetemlak.com") {
 			let neighborhood = $('.det-title-bottom .short-info-list li')[2].innerText + " Mh.";

@@ -14,6 +14,7 @@ $(document).ready(function () {
 				$("#age").val(response.age);
 				$("#from").val(response.from);
 				$("#link").val(response.link);
+				$("#ownership").val(response.ownership);
 			});
 	});
 
@@ -27,7 +28,8 @@ $(document).ready(function () {
 			"area": $('#area').val(),
 			"age": $('#age').val(),
 			"from": $('#from').val(),
-			"link": $('#link').val()
+			"link": $('#link').val(),
+			"ownership": $('#ownership').val()
 		};
 
 		$.ajax({

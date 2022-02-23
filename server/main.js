@@ -50,7 +50,7 @@ async function getAuthToken() {
 }
 
 async function insertHouse(spreadsheetId, auth, neighborhood, house) {
-    const usersModelRange = `${neighborhood}!A1:I`;
+    const usersModelRange = `${neighborhood}!A1:J`;
     const now = new Date(Date.now());
     const request = {
         spreadsheetId: spreadsheetId,
@@ -66,7 +66,8 @@ async function insertHouse(spreadsheetId, auth, neighborhood, house) {
                 house.age,
                 house.from,
                 house.link,
-                `${now.getDate()}.${now.getMonth() + 1}.${now.getFullYear()}`],
+                `${now.getDate()}.${now.getMonth() + 1}.${now.getFullYear()}`,
+                house.ownership]
             ],
         },
         auth: auth,
