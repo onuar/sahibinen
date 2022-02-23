@@ -18,7 +18,7 @@ $(document).ready(function () {
 			let room = infos[5].innerText;
 			let area = infos[4].innerText + ' / ' + infos[3].innerText;
 			let age = infos[6].innerText;
-			let from = infos[17].innerText;
+			let from = infos[19].innerText;
 			let link = location.href;
 			responseCallback({
 				neighborhood: neighborhood,
