@@ -7,7 +7,7 @@ $(document).ready(function () {
 			let infos = $('.classifiedInfo li span');
 
 			let neighborhood = $('.classifiedInfo h2 a')[2].innerText;
-			let price = $('.classifiedInfo h3')[0].innerText;
+			let price = $('.classifiedInfo h3')[0].innerText.split("\n")[0];
 
 			let face = '';
 			$($('.classifiedDescription ul:eq(0) .selected')).each(function () {
@@ -18,9 +18,9 @@ $(document).ready(function () {
 			let room = infos[5].innerText;
 			let area = infos[4].innerText + ' / ' + infos[3].innerText;
 			let age = infos[6].innerText;
-			let from = infos[19].innerText;
+			let from = infos[21].innerText;
 			let link = location.href;
-			let ownership = infos[18].innerText;
+			let ownership = infos[20].innerText;
 
 			responseCallback({
 				neighborhood: neighborhood,
